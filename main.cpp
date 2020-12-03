@@ -130,6 +130,9 @@ int main(){
 		else if(totalrows == 0){
 			cout << "The heap is empty!";
 		}
+		else if(totalrows == 1){
+			cout << "  " << heap[0] << endl;
+		}
 		else for(int i=0; i<100; i++){
 			int rownum = (int)floor(log2(i+1));
 			int width = ceil(exp2(totalrows+2-rownum));
